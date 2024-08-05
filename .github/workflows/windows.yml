@@ -29,16 +29,16 @@ jobs:
           haxelib setup "%HAXELIB_ROOT%"
           haxelib install lime 7.9.0
           RefreshEnv
-          haxelib install openfl
-          haxelib install flixel
+          haxelib install openfl 9.3.3
+          haxelib install flixel 5.5.0
           haxelib run lime setup flixel
           haxelib run lime setup
-          haxelib install flixel-tools
-          haxelib install flixel-addons
-          haxelib install flixel-ui
+          haxelib install flixel-tools 1.5.1
+          haxelib install flixel-addons 3.2.2
+          haxelib install flixel-ui 2.6.1
           haxelib install newgrounds
           haxelib install hscript
-          haxelib install flixel-addons
+          haxelib install flixel-addons 3.2.2
           haxelib git faxe https://github.com/uhrobots/faxe
           haxelib git polymod https://github.com/MasterEric/polymod.git
           haxelib git discord_rpc https://github.com/Aidan63/linc_discord-rpc
