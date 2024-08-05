@@ -87,8 +87,6 @@ class PlayState extends MusicBeatState
 	private var gf:Character;
 	private var boyfriend:Boyfriend;
 
-	var blockedSubtitles:FlxTypeText; // sus
-
 	private var notes:FlxTypedGroup<Note>;
 	private var unspawnNotes:Array<Note> = [];
 
@@ -3443,20 +3441,6 @@ class PlayState extends MusicBeatState
 					case 1305:
 						boyfriend.playAnim('hey', true);
 						gf.playAnim('cheer', true);
-				}
-			case 'blocked':
-				switch (curStep)
-				{
-					case 128: // blocked sub 1
-			            blockSubtitles = new FlxTypeText(400, 0, 800, 'I\'ll block you...', 32); // props to larryfrosty and baldimoo for helping me for doing typing text
-						blockSubtitles.setFormat(Paths.font("vcr.ttf"), 32, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
-						blockSubtitles.scrollFactor.set();
-		                blockSubtitles.borderSize = 1.25;
-						blockSubtitles.cameras = [camHUD];
-						blockSubtitles.start(0.05, false, false, [], function() {
-                            FlxTween.tween(blockSubtitles, {alpha: 0}, 2);
-                        });
-						add(blockSubtitles);
 				}
 			case 'glitch':
 				switch (curStep)
