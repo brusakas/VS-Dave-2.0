@@ -28,6 +28,7 @@ jobs:
           mkdir "%HAXELIB_ROOT%"
           haxelib setup "%HAXELIB_ROOT%"
           haxelib install lime 8.0.2
+          haxelib set lime --version 8.0.2 -y
           RefreshEnv
           haxelib install openfl 9.3.3
           haxelib install flixel 5.5.0
