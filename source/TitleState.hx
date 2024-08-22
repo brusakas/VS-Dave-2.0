@@ -23,7 +23,7 @@ import flixel.util.FlxTimer;
 import io.newgrounds.NG;
 import lime.app.Application;
 import openfl.Assets;
-import Discord.DiscordClient;
+//import Discord.DiscordClient;
 
 using StringTools;
 
